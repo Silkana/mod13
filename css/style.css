@@ -1,0 +1,317 @@
+/***************************************************************************
+****************************************************************************
+COMMON     COMMON     COMMON     COMMON     COMMON     COMMON     COMMON  **
+****************************************************************************
+****************************************************************************/
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+* {
+	line-height: 1.8;
+	box-sizing:border-box;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.section article i.fa {
+    display: block;
+}*/
+
+.fa {
+	display: block;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+
+}
+
+main article p {
+	font-family: "Open Sans";
+	margin-bottom: 50px;
+}
+
+input {
+	padding: 12px 15px 12px 50px;
+	border: none;
+	background-color: #FB8B9B;
+	width:100%;
+	font-family: "Open Sans";	
+	margin-bottom: 70px;
+	color: white;
+}
+
+.spanprice{
+	font-family: "Open Sans";
+	font-size: 1.2em;
+	color: #FB8B9B;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+/**************************************************************************
+HEADER    HEADER    HEADER    HEADER    HEADER    HEADER    HEADER        *
+***************************************************************************/
+
+nav ul {
+	display: flex;
+	justify-content : space-between;
+}
+
+
+a {
+	text-decoration: none;
+	color: #24424D;
+}
+
+nav {
+	text-align: center;
+	font-family: "candal";
+	color: #24424D;
+}
+
+header li + li {
+	position: relative;
+	top: 40px;
+}
+
+::-webkit-input-placeholder {
+	color:white;
+}
+
+header .fa {
+	color:#FB8B9B;
+}
+/**************************************************************************
+ARTICLES       ARTICLES       ARTICLES       ARTICLES       ARTICLES      *
+***************************************************************************/
+h3 {
+	font-size: 1.8em;
+	font-family: "candal";
+	color:#213E4C;
+	padding:25px;
+	border: dashed 1px;
+	border-bottom: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h4{
+	font-family: "candal";
+	font-size: 1.2em;
+	color: #FB8B9B;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+article {
+	flex-basis: 30%;
+	align-self: flex-start;
+}
+
+
+
+
+/**************************************************************************
+FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER    FOOTER        *
+***************************************************************************/
+
+footer {
+	background-color: #213E4E;
+	line-height: 1.8;
+	font-family: "Open Sans";
+}
+
+footer ul li {
+	
+	padding: 20px 0 20px 0;
+}
+
+footer a {
+	color: white;
+}
+
+footer {
+	text-align: center;
+	color: white;
+}
+
+
+/***************************************************************************
+****************************************************************************
+HEADER    HEADER    HEADER    HEADER    HEADER    HEADER    HEADER        **
+****************************************************************************
+****************************************************************************/
+
+#backgroundwithpic {
+	background-image: url(../img/background.jpg);
+}
+
+h1 {
+	color: white;
+	font-size: 3em;
+	font-family: "candal";
+	text-align: center;
+	padding: 150px 0 0 0;
+}
+
+header p {
+	font-family: "candal";
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 25px 0 150px 0;
+}
+
+article ul {
+    list-style: disc;
+    margin: 0 0 15px 30px;
+}
+/**************************************************************************
+BOX FORMAT   BOX FORMAT   BOX FORMAT   BOX FORMAT   BOX FORMAT   BOX FORM *
+***************************************************************************/
+
+.serveurtitre {
+	background-color: #213E4E;
+	padding: 15px 0 15px 0;
+	color: white;
+}
+
+.articleborder {
+	border: dashed 1px ;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+.articleborder button {
+	border: none;
+	background-color: #FB8B9B;
+	color: white;
+	width: 100%;
+	cursor: pointer;
+}
+
+.boldy {
+	font-family: "candal";
+	color: grey;
+	text-align: center;
+}
+
+.section h3 + p {
+	margin-bottom: 50px;
+}
+
+
+/**************************************************************************
+CONTACT     CONTACT     CONTACT     CONTACT     CONTACT     CONTACT       *
+***************************************************************************/
+
+.contactformat {
+	text-align: center;
+	color: pink;
+}
+
+.contactformat span {
+	color:grey;
+}
+
+.adress {
+	color: black;
+}
+
+.contactformat .fa {
+	border-bottom: dotted 2px pink;
+	padding-bottom: 15px;
+}
+
+iframe {
+	width:100%;
+	height: 400px;
+}
+
+/**************************************************************************
+ANIMAZION    ANIMAZION    ANIMAZION    ANIMAZION    ANIMAZION             *
+***************************************************************************/
+
+header li + li:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+header li:hover a{
+	transition: .5s ease;
+	color: #FB8B9B;
+}
+
+header li:hover .fa{
+	transition: .5s ease;
+	color: #24424D;
+}
+
+button:hover {
+	transition: .5s ease;
+	background-color: #24424D;
+}
+
+main section div:hover .articleborder {
+	opacity: .4;
+}
+
+main section div .articleborder:hover {
+	opacity: 1;
+}
+
+
+/**************************************************************************
+RESPONSIVE    RESPONSIVE    RESPONSIVE    RESPONSIVE    RESPONSIVE        *
+***************************************************************************/
+
+@media screen and (max-width: 768px) {
+
+	.container{
+	max-width: 80%;
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0px 30px 0px;
+	}
+
+	nav ul li {
+		padding: 0px 0 50px 0;
+	}
+
+	header .fa {
+		display: none;
+	}
+
+	div {
+		display: flex;
+		flex-direction:column;
+	}
+	footer nav ul li:first-child {
+		margin-top: 40px;
+	}
+
+	main article {
+		flex-basis: 0;
+	}
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	header p {
+		font-size: 1em;
+	}
+
+}
